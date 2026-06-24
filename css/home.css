@@ -28,6 +28,10 @@ color:white;
 overflow-x:hidden;
 }
 
+a{
+    cursor: pointer;
+}
+
 nav{
 width:90%;
 margin:auto;

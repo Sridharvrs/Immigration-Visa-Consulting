@@ -1058,6 +1058,10 @@ footer i{
     color: rgb(83, 103, 216);
 }
 
+a{
+    cursor: pointer;
+}
+
 /* SOCIAL */
 .socials{
     margin-top:15px;

@@ -1064,6 +1064,10 @@ cursor:pointer;
     transition:0.3s;
 }
 
+a{
+    cursor: pointer;
+}
+
 .socials a:hover{
     background:#38bdf8;
     transform:translateY(-3px);
