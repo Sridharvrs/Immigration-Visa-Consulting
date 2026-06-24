@@ -60,6 +60,7 @@ color:var(--accent);
 
 .btn{
 background:var(--secondary);
+cursor: pointer;
 padding:12px 24px;
 border-radius:50px;
 text-decoration:none;
