@@ -748,3 +748,184 @@ table{
         grid-template-columns: 1fr;
     }
 }
+
+/* ===================== MOBILE RESPONSIVE FIX ===================== */
+
+@media (max-width: 1024px) {
+
+    /* layout shift */
+    .main-content {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 220px;
+    }
+}
+
+/* ===================== TABLET ===================== */
+@media (max-width: 900px) {
+
+    /* sidebar becomes top drawer style */
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 12px;
+        gap: 8px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .sidebar a {
+        flex: 0 0 auto;
+        font-size: 0.85rem;
+        padding: 8px 10px;
+    }
+
+    .logout-btn {
+        margin-top: 0;
+        padding: 8px 12px;
+        flex: 0 0 auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* topbar */
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .user-box {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    /* DASH GRID */
+    .dash-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* TABLE */
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .user-table {
+        min-width: 700px;
+    }
+
+    /* APPLICATION */
+    .app-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .app-actions {
+        grid-column: auto;
+    }
+
+    /* CMS */
+    .cms-settings {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 600px) {
+
+    /* stats become single column */
+    .dash-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .dash-header p {
+        font-size: 0.9rem;
+    }
+
+    /* cards spacing */
+    .dash-card {
+        padding: 1rem;
+    }
+
+    /* buttons full width */
+    .action-btn {
+        font-size: 0.9rem;
+    }
+
+    .lead-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* user controls stack */
+    .user-controls,
+    .lead-controls {
+        flex-direction: column;
+    }
+
+    .search-box,
+    .filter-box {
+        width: 100%;
+    }
+
+    /* table smaller */
+    .user-table {
+        font-size: 0.8rem;
+    }
+
+    /* reduce padding */
+    .main-content {
+        padding: 10px;
+    }
+}
+
+/* ===================== EXTRA SMALL (very phones) ===================== */
+@media (max-width: 420px) {
+
+    .sidebar a {
+        font-size: 0.75rem;
+        padding: 6px 8px;
+    }
+
+    .user-info span {
+        font-size: 0.85rem;
+    }
+
+    .user-info small {
+        font-size: 0.7rem;
+    }
+
+    .dash-card h2 {
+        font-size: 1.4rem;
+    }
+}

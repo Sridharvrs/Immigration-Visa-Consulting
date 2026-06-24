@@ -948,3 +948,152 @@ li{
     font-size:.9rem;
     opacity:.7;
 }
+
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+
+/* TABLET + SMALL LAPTOP */
+@media (max-width: 1024px){
+
+    .main-content{
+        margin-left: 220px;
+        width: calc(100% - 220px);
+        padding: 20px;
+    }
+
+    .dash-stats{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doc-stats,
+    .support-stats{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =========================
+   MOBILE (PRIMARY FIX)
+========================= */
+@media (max-width: 768px){
+
+    /* SIDEBAR -> HIDDEN BY DEFAULT */
+    .sidebar{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background: #0f172a;
+        transition: 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    /* ACTIVE SIDEBAR */
+    .sidebar.active{
+        left: 0;
+    }
+
+    /* MAIN CONTENT FULL WIDTH */
+    .main-content{
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* GRIDS */
+    .dash-stats{
+        grid-template-columns: 1fr;
+    }
+
+    .dash-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .app-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .doc-stats{
+        grid-template-columns: 1fr;
+    }
+
+    .support-stats{
+        grid-template-columns: 1fr;
+    }
+
+    .support-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .profile-top,
+    .profile-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* TEXT SCALE */
+    .dash-header h2{
+        font-size: 1.4rem;
+    }
+
+    .dash-header p{
+        font-size: 0.9rem;
+    }
+
+    /* TABLE SCROLL FIX */
+    .ticket-table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* BUTTONS */
+    .action-btn,
+    .support-btn{
+        font-size: 0.9rem;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px){
+
+    .main-content{
+        padding: 10px;
+    }
+
+    .dash-box,
+    .app-card,
+    .document-card,
+    .support-box,
+    .profile-box{
+        padding: 15px;
+    }
+
+    .profile-info{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar{
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+}

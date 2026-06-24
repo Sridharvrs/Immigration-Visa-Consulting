@@ -1255,3 +1255,9 @@ footer a{
     width:100%;
   }
 }
+
+/* LOCK BACKGROUND SCROLL */
+body.no-scroll{
+    overflow: hidden;
+    height: 100vh;
+}

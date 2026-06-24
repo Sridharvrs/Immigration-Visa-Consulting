@@ -3,6 +3,7 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+max-width:100%;
 }
 
 :root{
@@ -1249,4 +1250,10 @@ footer a{
   .newsletter button{
     width:100%;
   }
+}
+
+/* LOCK BACKGROUND SCROLL */
+body.no-scroll{
+    overflow: hidden;
+    height: 100vh;
 }

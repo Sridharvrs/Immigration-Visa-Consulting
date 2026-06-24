@@ -3,6 +3,7 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+max-width:100%;
 }
 
 :root{
@@ -2595,4 +2596,10 @@ footer a{
     .news-title{
         font-size:1.7rem !important;
     }
+}
+
+/* LOCK BACKGROUND SCROLL */
+body.no-scroll{
+    overflow: hidden;
+    height: 100vh;
 }
