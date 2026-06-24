@@ -1458,6 +1458,10 @@ cursor:pointer;
     transform:translateY(-3px);
 }
 
+i{
+    color: black;
+}
+
 footer i{
     color: rgb(83, 103, 216);
 }
