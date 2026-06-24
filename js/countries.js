@@ -60,3 +60,12 @@ const strobserver = new IntersectionObserver(entries => {
 document.querySelectorAll(".typing").forEach(el=>{
   strobserver.observe(el);
 });
+
+// =====================================================
+
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
