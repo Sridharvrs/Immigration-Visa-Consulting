@@ -615,7 +615,7 @@ cursor:pointer;
 }
 
 .why-card p{
-    color:#475569;
+    color:white;
 }
 
 @keyframes fromBottom{
@@ -661,7 +661,7 @@ cursor:pointer;
 }
 
 .visa-subtitle{
-    color:#475569;
+    color:white;
     margin-bottom:50px;
 }
 
@@ -743,7 +743,7 @@ cursor:pointer;
 }
 
 .visa-card p{
-    color:#475569;
+    color:white;
     line-height:1.6;
 }
 
@@ -832,6 +832,7 @@ cursor:pointer;
     }
 }
 
+
 /* ===================== COUNTRIES SECTION ======================= */
 .countries{
     padding:100px 5%;
@@ -845,7 +846,7 @@ cursor:pointer;
 }
 
 .countries-subtitle{
-    color:#475569;
+    color:white;
     margin-bottom:50px;
 }
 
@@ -1009,7 +1010,7 @@ cursor:pointer;
 }
 
 .how-subtitle{
-    color:#475569;
+    color:white;
     margin-bottom:80px;
 }
 
@@ -1058,7 +1059,7 @@ cursor:pointer;
 }
 
 .how-text p{
-    color:#475569;
+    color:white;
     line-height:1.6;
 }
 
@@ -1069,7 +1070,7 @@ cursor:pointer;
 
 .how-text p{
     font-size:1rem;
-    color:#475569;
+    color:white;
     line-height:1.8;
 }
 
@@ -1463,7 +1464,7 @@ i{
 }
 
 footer i{
-    color: rgb(83, 103, 216);
+    color: white;
 }
 
 /* NEWSLETTER */
@@ -1905,7 +1906,7 @@ footer i{
 }
 
 .elig-text p{
-    color:#475569;
+    color:white;
     line-height:1.8;
     margin-bottom:25px;
     max-width:500px;
@@ -2717,4 +2718,8 @@ footer a{
 body.no-scroll{
     overflow: hidden;
     height: 100vh;
+}
+
+.sub{
+    color: #06b6d4;
 }

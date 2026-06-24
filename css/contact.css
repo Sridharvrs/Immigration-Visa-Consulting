@@ -832,7 +832,7 @@ i{
 }
 
 footer i{
-    color: rgb(83, 103, 216);
+    color: white;
 }
 
 a{
@@ -973,4 +973,11 @@ footer a{
 body.no-scroll{
     overflow: hidden;
     height: 100vh;
+}
+
+.sub{
+    color: #06b6d4;
+}
+.support .sub{
+    color: #06b6d4;
 }

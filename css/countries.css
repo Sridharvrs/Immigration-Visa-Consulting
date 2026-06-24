@@ -1050,7 +1050,7 @@ i{
 }
 
 footer i{
-    color: rgb(83, 103, 216);
+    color: white;
 }
 
 a{
@@ -1358,3 +1358,15 @@ body.no-scroll{
 
 }
 
+
+.sub{
+    color: #06b6d4;
+}
+
+.world-map-section p{
+  color: #06b6d4;
+}
+
+.featured-destinations .sub{
+  color: #06b6d4;
+}

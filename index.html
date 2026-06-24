@@ -93,10 +93,10 @@
         <!-- LEFT TEXT (from left) -->
         <div class="elig-text reveal-left">
             <h2 class="elig-text reveal left">Quick Eligibility Check</h2>
-            <p>
+            <!-- <p class="sub">
                 Find your visa eligibility in just a few seconds.
                 Fast, accurate and expert-backed results.
-            </p>
+            </p> -->
 
             <ul>
                 <li>✔ Free Assessment</li>
@@ -111,7 +111,13 @@
             <h3>Check Your Eligibility</h3>
 
             <form>
-                <input type="text" placeholder="Full Name" required>
+                <!-- NAME (ONLY LETTERS) -->
+                <input type="text"
+                  placeholder="Full Name"
+                  id="fullName"
+                  required
+                  oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g,'')"
+                >
                 <input type="number" placeholder="Age" required>
 
                 <select required>
@@ -179,7 +185,7 @@
 <section class="visa">
 
     <h2 class="visa-title reveal-up">Visa Categories</h2>
-    <p class="visa-subtitle reveal-up">
+    <p class="visa-subtitle sub reveal-up">
         Choose the right visa type based on your goal and start your journey abroad.
     </p>
 
@@ -223,7 +229,7 @@
 <section class="countries">
 
     <h2 class="countries-title reveal-up">Countries We Serve 🌍</h2>
-    <p class="countries-subtitle reveal-up">
+    <p class="countries-subtitle sub reveal-up">
         Explore top destinations where we help students, workers, and families successfully settle abroad.
     </p>
 
@@ -291,7 +297,7 @@
 <section class="how">
 
     <h2 class="how-title reveal-up">How It Works</h2>
-    <p class="how-subtitle reveal-up">
+    <p class="how-subtitle sub reveal-up">
         A complete step-by-step immigration process designed to maximize your visa approval chances.
     </p>
 
@@ -383,7 +389,7 @@
 <section class="testimonials">
 
   <h2 class="section-title reveal up">💬 What Our Clients Say</h2>
-  <p class="section-subtitle reveal up">
+  <p class="section-subtitle sub reveal up">
     Real stories from students, professionals, and families who achieved their dreams abroad.
   </p>
 
@@ -446,7 +452,7 @@
 <section class="news">
 
     <h2 class="news-title reveal-up">Latest Immigration Updates</h2>
-    <p class="news-subtitle reveal-up">
+    <p class="news-subtitle sub reveal-up">
         Real-time visa news, policy changes, and global immigration alerts.
     </p>
 

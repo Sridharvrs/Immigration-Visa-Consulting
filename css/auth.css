@@ -133,13 +133,15 @@
 .popup-left{
     padding:60px;
 
-    background:
+    /* background:
     linear-gradient(
     135deg,
-    #8c78dc 0%,
+    #7884dc 0%,
     #505d8b 50%,
     #2b224d 100%
-    );
+    ); */
+
+    
 
     display:flex;
     flex-direction:column;
@@ -437,8 +439,8 @@
 .popup-right{
   background: linear-gradient(
     145deg,
-    #606fba,
-    #111b41
+    #7889de,
+    #060f33
   );
 }
 

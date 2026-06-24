@@ -1059,11 +1059,15 @@ i{
 }
 
 footer i{
-    color: rgb(83, 103, 216);
+    color: white;
 }
 
 a{
     cursor: pointer;
+}
+
+.sub{
+    color: #06b6d4;
 }
 
 /* SOCIAL */
