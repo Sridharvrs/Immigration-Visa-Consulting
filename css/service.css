@@ -124,6 +124,7 @@ display:none;
 
 .mobile-contact{
     display: none;
+    
 }
 
 .mobile-login-btn{
@@ -266,7 +267,7 @@ cursor:pointer;
     }
 
     .mobile-contact{
-        margin-top:auto;
+        margin-top:30px;
         border-top:1px solid rgba(255,255,255,.1);
         padding-top:20px;
     }
