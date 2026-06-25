@@ -1364,6 +1364,12 @@ display:none;
     display: none;
 }
 
+.no-scroll{
+    position: fixed;
+    overflow:hidden;
+    height:100vh;
+}
+
 @media(max-width:900px){
 
 
