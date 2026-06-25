@@ -45,7 +45,7 @@ overflow-x:hidden;
 .about-hero-bg{
     position:absolute;
     inset:0;
-    background:url("/images/place4.webp")
+    background:url("images/place4.webp")
     center/cover no-repeat;
     transform:scale(1.1);
     filter:brightness(0.7);

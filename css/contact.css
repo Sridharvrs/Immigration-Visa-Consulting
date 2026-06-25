@@ -47,7 +47,7 @@ overflow-x:hidden;
 .contact-hero-bg{
     position:absolute;
     inset:0;
-    background:url("/images/airplane.webp") bottom/cover no-repeat;
+    background:url("images/airplane.webp") bottom/cover no-repeat;
     transform:scale(1.1);
     z-index:0;
 }
