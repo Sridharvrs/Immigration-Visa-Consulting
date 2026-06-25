@@ -335,10 +335,7 @@ cursor:pointer;
     padding:100px 5%;
     color:#0f172a;
     background:
-    radial-gradient(circle at top left, rgba(59,130,246,.25), transparent 40%),
-    radial-gradient(circle at top right, rgba(34,211,238,.25), transparent 40%),
-    radial-gradient(circle at bottom left, rgba(99,102,241,.18), transparent 40%),
-    linear-gradient(135deg, #f8fafc, #e0f2fe);
+    linear-gradient(135deg, white, rgba(106, 164, 241, 0.2));
 }
 
 .elig-container{
@@ -443,10 +440,7 @@ cursor:pointer;
 /* ======= ANIMATIONS ======= */
 .eligibility{
     padding:100px 5%;
-    background:
-    radial-gradient(circle at top left, rgba(59,130,246,.25), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(34,211,238,.25), transparent 40%),
-    linear-gradient(135deg, #f8fafc, #e0f2fe);
+    
     color:#0f172a;
 }
 
@@ -860,7 +854,7 @@ cursor:pointer;
 
 .countries-title{
     font-size:2.8rem;
-    color:#0f172a;
+    color:#ffffff;
 }
 
 .countries-subtitle{
@@ -1895,10 +1889,7 @@ footer i{
 
 .eligibility{
     padding:120px 5%;
-    background:
-    radial-gradient(circle at top left, rgba(59,130,246,.20), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(34,211,238,.20), transparent 40%),
-    linear-gradient(135deg,#f8fafc,#e0f2fe);
+
     overflow:hidden;
 }
 
@@ -2382,7 +2373,16 @@ footer i{
 /* ================= COUNTRIES SECTION ================= */
 .countries{
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, #0c2553, #f8f8f8);
+    background:
+    radial-gradient(circle at top left,
+    rgba(37,99,235,.15),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(56,189,248,.15),
+    transparent 35%),
+
+    linear-gradient(135deg,#07111f,#0f172a);
     color: #fff;
     text-align: center;
 }
