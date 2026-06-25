@@ -178,7 +178,7 @@ cursor:pointer;
 .hero-bg{
     position:absolute;
     inset:0;
-    background:url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    background:url('/images/airplane.webp') center/cover no-repeat;
     transform:scale(1.1);
 }
 
@@ -670,12 +670,6 @@ cursor:pointer;
 }
 
 /* =================== VISTA CATEGORIZE SECTION ================== */
-.visa{
-    padding:100px 5%;
-    background:
-    linear-gradient(135deg,#f8fafc,#e0f2fe);
-    text-align:center;
-}
 
 /* TITLE */
 .visa-title{
@@ -1030,7 +1024,7 @@ cursor:pointer;
 /* TITLE */
 .how-title{
     font-size:3rem;
-    color:#0f172a;
+    color:#ffffff;
 }
 
 .how-subtitle{
@@ -1079,7 +1073,7 @@ cursor:pointer;
 .how-text h3{
     font-size:1.6rem;
     margin-bottom:10px;
-    color:#0f172a;
+    color:#ffffff;
 }
 
 .how-text p{
@@ -1089,7 +1083,7 @@ cursor:pointer;
 
 .how-text h3{
     font-size:1.7rem;
-    color:#0f172a;
+    color:#038bca;
 }
 
 .how-text p{
@@ -2326,7 +2320,11 @@ footer i{
 /* ================= VISA SECTION ================= */
 .visa{
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, #f8f8f8, #829fd5);
+    background:
+    radial-gradient(circle at top left, rgba(59,130,246,.25), transparent 40%),
+    radial-gradient(circle at top right, rgba(34,211,238,.25), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(99,102,241,.18), transparent 40%),
+    linear-gradient(135deg, #f8fafc, #e0f2fe);
     color: #fff;
     text-align: center;
 }
@@ -2461,7 +2459,11 @@ footer i{
 /* ================= HOW IT WORKS ================= */
 .how{
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, #f8f8f8, #829fd5);
+    background: linear-gradient(
+        180deg,
+        #0b1220 0%,
+        #111827 100%
+    );
     color: #fff;
     text-align: center;
 }
@@ -2746,4 +2748,122 @@ body.no-scroll{
 
 .sub{
     color: #06b6d4;
+}
+
+/* ==========================
+   VISA SECTION
+========================== */
+.visa{
+    padding: 100px 8%;
+    background: linear-gradient(
+        180deg,
+        #0b1220 0%,
+        #111827 100%
+    );
+    text-align: center;
+}
+
+.visa-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.visa-subtitle{
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* GRID */
+.visa-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.visa-card{
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    padding: 35px 28px;
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TOP GLOW */
+.visa-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        #38bdf8,
+        #22c55e
+    );
+}
+
+/* HOVER */
+.visa-card:hover{
+    transform: translateY(-10px);
+    border-color: rgba(56,189,248,.4);
+    box-shadow:
+    0 15px 35px rgba(56,189,248,.15);
+}
+
+/* TITLE */
+.visa-card h3{
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* TEXT */
+.visa-card p{
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:991px){
+
+    .visa-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .visa{
+        padding: 70px 20px;
+    }
+
+    .visa-title{
+        font-size: 2rem;
+    }
+
+    .visa-subtitle{
+        margin-bottom: 40px;
+    }
+
+    .visa-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .visa-card{
+        padding: 28px 22px;
+    }
+
 }

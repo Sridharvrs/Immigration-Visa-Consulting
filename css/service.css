@@ -379,13 +379,17 @@ cursor:pointer;
 /* =========== CORE SERVICES ========== */
 .core-services{
     padding:120px 5%;
-    background:linear-gradient(135deg,#dfe2e5,#6983ac);
+    background: linear-gradient(
+        180deg,
+        #0b1220 0%,
+        #111827 100%
+    );
 }
 
 .core-services h2{
     text-align:center;
     font-size:2.8rem;
-    color:#0f172a;
+    color:#ffffff;
 }
 
 
@@ -427,7 +431,7 @@ cursor:pointer;
 
 .service-text h3{
     font-size:2rem;
-    color:#0f172a;
+    color:#38bdf8;
     margin-bottom:15px;
 }
 
@@ -444,7 +448,7 @@ cursor:pointer;
 
 .service-text li{
     margin-bottom:8px;
-    color:#334155;
+    color:#8ab2eb;
 }
 
 /* RESPONSIVE */
