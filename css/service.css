@@ -131,7 +131,7 @@ display:none;
 }
 
 .no-scroll{
-    
+    position: fixed;
     overflow:hidden;
     height:100vh;
 }
