@@ -92,15 +92,14 @@ signupPassword.addEventListener("input",()=>{
     /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&]).{8,}$/;
 
     if(strongPassword.test(value)){
-        hint.innerHTML =
-        "✓ Strong password";
+        hint.textContent = "✓ Strong password";
 
         hint.className =
         "hint-text valid";
     }
     else{
-        hint.innerHTML =
-        "Password must contain 8+ chars, letter, number & symbol";
+        hint.textContent =
+"Password must contain 8+ chars, letter, number & symbol";
 
         hint.className =
         "hint-text invalid";
@@ -112,24 +111,54 @@ signupPassword.addEventListener("input",()=>{
 // SAMPLE LOGIN
 function login(){
 
-    const email = document.getElementById("loginEmail").value;
-    const pass = document.getElementById("loginPassword").value;
-    const role = document.getElementById("loginRole").value;
+    const email =
+    document.getElementById("loginEmail").value.trim();
+
+    const pass =
+    document.getElementById("loginPassword").value;
+
+    const role =
+    document.getElementById("loginRole").value;
 
     if(!email || !pass){
         alert("Please fill all fields");
         return;
     }
 
-    // store session
-    localStorage.setItem("userRole", role);
-    localStorage.setItem("userEmail", email);
+    const emailRegex =
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // redirect based on role
-    if(role === "admin"){
-        window.location.href = "admin-dashboard.html";
-    } else {
-        window.location.href = "user-dashboard.html";
+    if(!emailRegex.test(email)){
+        alert("Please enter a valid email");
+        return;
+    }
+
+    try{
+
+        sessionStorage.setItem(
+            "userEmail",
+            email
+        );
+
+        sessionStorage.setItem(
+            "userRole",
+            role
+        );
+
+        if(role === "admin"){
+            window.location.replace(
+                "admin-dashboard.html"
+            );
+        }else{
+            window.location.replace(
+                "user-dashboard.html"
+            );
+        }
+
+    }
+    catch(err){
+        console.error(err);
+        alert("Login failed");
     }
 }
 

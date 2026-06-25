@@ -1291,3 +1291,14 @@ body.no-scroll{
     overflow: hidden;
     height: 100vh;
 }
+
+.viewer-button,
+.lg-icon,
+.fancybox-button,
+.zoom-icon{
+    display:none !important;
+}
+
+img + button{
+    display:none !important;
+}
